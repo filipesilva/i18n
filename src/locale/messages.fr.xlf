@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- tag::fr[] -->
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="fr">
+    <body>
+      <trans-unit id="5e3335d7f1a430ef14a91507531838c57138b7f2" datatype="html">
+        <source>Welcome to Ponyracer</source>
+        <target>Bienvenue dans Ponyracer</target>
+      </trans-unit>
+      <!-- end::fr[] -->
+      <trans-unit id="6e37e34598c734b3649ba478cac5f2d29e67c331" datatype="html">
+        <source>
+  Welcome to Ponyracer.
+</source>
+        <target>
+  Bienvenue dans Ponyracer.
+</target>
+      </trans-unit>
+      <trans-unit id="home.title" datatype="html">
+        <source>Welcome to Ponyracer</source>
+        <target>Bienvenue dans Ponyracer</target>
+      </trans-unit>
+      <trans-unit id="home.fullTitle" datatype="html">
+        <source>Welcome to Ponyracer</source>
+        <target>Bienvenue dans Ponyracer</target>
+        <note priority="1" from="description">the title of the home page</note>
+        <note priority="1" from="meaning">welcome title</note>
+      </trans-unit>
+      <!-- tag::interpolation[] -->
+      <trans-unit id="home.welcome" datatype="html">
+        <source>Welcome to Ponyracer <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ user.lastName }}"/>!</source>
+        <target>Bienvenue dans Ponyracer <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ user.lastName }}"/>&nbsp;!</target>
+      </trans-unit>
+      <!-- end::interpolation[] -->
+      <trans-unit id="home.ponyImage.alt" datatype="html">
+        <source>running pony</source>
+        <target>poney qui court</target>
+      </trans-unit>
+      <trans-unit id="home.ponyImage.title" datatype="html">
+        <source>Ponies are cool, aren&apos;t they?</source>
+        <target>Les poneys sont cools, n&apos;est-ce pas&nbsp;?</target>
+      </trans-unit>
+      <trans-unit id="home.startMessage" datatype="html">
+        <source>Let&apos;s start playing.</source>
+        <target>Commençons à jouer.</target>
+      </trans-unit>
+      <!-- tag::pluralization[] -->
+      <trans-unit id="home.racesPlanned" datatype="html">
+        <source>
+  Hello, <x id="ICU" equiv-text="{racesPlanned, plural, =0 {...} =1 {...} other {...}}"/>..
+</source>
+        <target>Bonjour, <x id="ICU" equiv-text="{racesPlanned, plural, =0 {...} =1 {...} other {...}}"/>.</target>
+      </trans-unit>
+      <trans-unit id="963d1c0d7d9c63f9e7ba6c048709604b484b79ac" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {no race is planned} =1 {only one race is planned} other {<x id="INTERPOLATION" equiv-text="{{ racesPlanned }}"/> races are planned} }</source>
+        <target>{VAR_PLURAL, plural, =0 {aucune course n'est planifiée} =1 {seule une course est planifiée} other {<x id="INTERPOLATION" equiv-text="{{ racesPlanned }}"/> courses sont planifiées} }</target>
+      </trans-unit>
+      <!-- end::pluralization[] -->
+      <!-- tag::fr[] -->
+    </body>
+  </file>
+</xliff>
+    <!-- end::fr[] -->
