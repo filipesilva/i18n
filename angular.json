@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/i18n",
+            "outputPath": "dist/i18n/untranslated",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,9 +59,18 @@
                 }
               ]
             },
-            "fr": {
-              "progress": false,
+            "fr-ivy": {
+              "outputPath": "dist/i18n/ivy",
               "localize": ["fr"]
+            },
+            "fr-compat": {
+              "outputPath": "dist/i18n/compat",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr"
+            },
+            "ve": {
+              "tsConfig": "tsconfig.app.ve.json"
             }
           }
         },

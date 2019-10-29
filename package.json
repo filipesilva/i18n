@@ -4,12 +4,19 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production,fr",
+    "build-ivy": "ng build --configuration=production,fr-ivy",
+    "serve-ivy": "serve dist/i18n/ivy/fr --single --listen 4200",
+    "build-compat": "ng build --configuration=production,fr-compat",
+    "serve-compat": "serve dist/i18n/compat --single --listen 4200",
+    "build-ve": "ng build --configuration=production,fr-compat,ve",
+    "serve-ve": "serve dist/i18n/ve --single --listen 4200",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "npm-run-all -p -r serve:e2e protractor",
+    "e2e-ivy": "npm-run-all -p -r \"serve:e2e dist/i18n/ivy/fr \" protractor",
+    "e2e-compat": "npm-run-all -p -r \"serve:e2e dist/i18n/compat \" protractor",
+    "e2e-ve": "npm-run-all -p -r \"serve:e2e dist/i18n/ve \" protractor",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
-    "serve:e2e": "serve dist/i18n/fr --single --listen 4200",
+    "serve:e2e": "serve --single --listen 4200",
     "protractor": "ng e2e --dev-server-target="
   },
   "private": true,
@@ -28,8 +35,8 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.900.0-next.16",
-    "@angular/cli": "9.0.0-next.16",
+    "@angular-devkit/build-angular": "0.900.0-next.18",
+    "@angular/cli": "9.0.0-next.18",
     "@angular/compiler-cli": "9.0.0-next.14",
     "@angular/language-service": "9.0.0-next.14",
     "@types/jasmine": "~3.4.0",
